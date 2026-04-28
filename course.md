@@ -1,6 +1,6 @@
 # AI Engineering Course with Python — Beginner to Expert
 
-A structured 4-level curriculum. Each level builds on the previous.
+A structured 4-level curriculum, plus an optional Level 5 capstone applying it all to financial forecasting. Each level builds on the previous.
 
 > Each module title below links to its folder. Folders contain a `README.md` (lesson plan), `INSTALL.md` (setup), numbered concept files, and an `exercises/` subfolder.
 
@@ -148,6 +148,50 @@ A structured 4-level curriculum. Each level builds on the previous.
 - Security (OWASP LLM Top 10)
 
 **Capstone:** Ship a production LLM application — RAG + agents + monitoring + evals — deployed behind an API with CI/CD.
+
+---
+
+## LEVEL 5 — Extra: Capstone — Financial Forecasting (2026) — ~8-10 weeks
+
+**Goal:** apply Levels 1-4 to build a multi-method financial forecaster with backtesting, uncertainty, and LLM augmentation. Examples cover ETFs, equities, FX, crypto, and macro (rates, CPI). Data from `yfinance` and FRED. LLM features use Anthropic and OpenAI.
+
+### [Module 5.1 — Foundations of Financial Time Series](level-5-extra/module-5.1-financial-timeseries-foundations/)
+- Returns vs prices, stationarity, ACF/PACF, stylized facts
+- Data loaders for yfinance & FRED, point-in-time alignment
+- Time-aware splits & walk-forward CV; common look-ahead traps
+
+### [Module 5.2 — Classical Statistical Forecasting](level-5-extra/module-5.2-classical-forecasting/)
+- Naive baselines, ETS, ARIMA/SARIMA, Prophet, GARCH, VAR
+- Forecast combination
+
+### [Module 5.3 — ML Forecasting with Tabular Models](level-5-extra/module-5.3-ml-forecasting/)
+- Lag/rolling/calendar features, XGBoost & LightGBM
+- Quantile regression, walk-forward CV, Optuna HPO, `mlforecast`
+
+### [Module 5.4 — Deep Learning for Time Series](level-5-extra/module-5.4-deep-learning-forecasting/)
+- LSTM, N-BEATS, N-HiTS, PatchTST, TFT (`darts`, `neuralforecast`)
+- Pinball loss; head-to-head vs LightGBM
+
+### [Module 5.5 — Time-Series Foundation Models (2026)](level-5-extra/module-5.5-foundation-models/)
+- Chronos / Chronos-Bolt, TimesFM, TimeGPT, Moirai, Lag-Llama
+- Zero-shot, probabilistic forecasts, fine-tuning, when foundation models win
+
+### [Module 5.6 — LLM-Augmented Forecasting](level-5-extra/module-5.6-llm-augmented-forecasting/)
+- News sentiment as a feature, structured extraction from filings
+- RAG over 10-Ks, multi-agent forecast loops, narrative explanations
+- Prompt caching for cost control
+
+### [Module 5.7 — Probabilistic Forecasting & Backtesting](level-5-extra/module-5.7-probabilistic-backtesting/)
+- MASE, RMSSE, CRPS, pinball, coverage diagrams
+- Split conformal, CQR, adaptive conformal under regime shift
+- Walk-forward backtests; Sharpe, drawdown, regime breakdowns
+
+### [Module 5.8 — Capstone Project](level-5-extra/module-5.8-capstone/)
+- Full `forecaster/` package: pluggable model zoo, stacking ensemble, conformal calibration, MLflow tracking, FastAPI serving, Streamlit dashboard, Docker, GitHub Actions CI
+
+**Capstone deliverable:** A single repo serving point + interval forecasts with a Claude-written narrative for any ETF/equity/FX/crypto/macro target.
+
+> Disclaimer: Level 5 is educational. Nothing here is investment advice.
 
 ---
 

@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+mlruns/
+mlartifacts/
+data/cache/
+*.parquet
+*.feather
+*.pkl
+.streamlit/secrets.toml

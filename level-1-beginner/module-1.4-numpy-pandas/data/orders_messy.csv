@@ -1,0 +1,21 @@
+order_id,date,customer_id,product,category,quantity,price
+1,2024-01-03, 101 ,Widget,Tools,2,9.99
+2,2024/01/05,102,Gadget,Tools, 1 ,$29.99
+3,2024-01-08,101,Doohickey,,3,4.99
+4,Jan 9 2024,103,Widget,Tools,5,
+5,2024-01-12,104,Book,Books,1,14.99
+6,,102,Book,Books,2,14.99
+7,2024-01-15,105,GADGET,Tools,1,29.99
+8,2024-01-18,101,Mug,Kitchen,four,7.50
+9,2024-01-20,106,Mug,Kitchen,2,7.50
+10,2024-01-22,,Widget,Tools,1,9.99
+11,2024-02-01,107,Book,Books,3,14.99
+12,2024-02-03,102, doohickey,Tools,5,4.99
+13,2024-02-05,108,Mug,kitchen,1,$7.50
+14,2024-02-07,101,Gadget,Tools,2,29.99
+15,2024-02-10,109,Widget,Tools,-1,9.99
+16,02/12/2024,110,Book,Books,4,14.99
+17,2024-02-15,104,Doohickey,Tools,2,4.99
+18,2024-02-18,105,Mug ,Kitchen,3,7.50
+19,2024-02-20,103,Book,books,1,14.99
+20,2024-02-22,102,Gadget,Tools,,29.99

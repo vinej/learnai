@@ -1,0 +1,9 @@
+torch>=2.2
+transformers>=4.40
+datasets>=2.18
+tokenizers>=0.19
+sentence-transformers>=2.7
+evaluate>=0.4
+rouge_score>=0.1.2
+numpy>=1.26
+matplotlib>=3.8

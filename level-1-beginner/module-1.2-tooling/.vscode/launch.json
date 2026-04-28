@@ -1,0 +1,32 @@
+{
+    // VS Code debugger configurations.
+    // Open a .py file and press F5; the active config runs.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: Current File (with args)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "args": "${command:pickArgs}",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Debug recursion exercise",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/exercises/02_debug_recursion.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}

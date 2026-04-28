@@ -1,0 +1,11 @@
+customer_id,name,city,signup_date,age
+101,Alice,Paris,2023-05-01,32
+102,Bob,London,2023-06-15,45
+103,Carol,Paris,2023-08-22,28
+104,Dave,Berlin,2023-09-10,51
+105,Eve,Madrid,2023-10-05,37
+106,Frank,Paris,2023-11-12,29
+107,Grace,London,2023-12-01,42
+108,Heidi,Berlin,2024-01-08,33
+109,Ivan,Madrid,2024-01-15,48
+110,Judy,Paris,2024-02-01,26

@@ -1,0 +1,7 @@
+anthropic>=0.39
+sentence-transformers>=2.7
+faiss-cpu>=1.8
+rank-bm25>=0.2.2
+pydantic>=2.6
+numpy>=1.26
+matplotlib>=3.8

@@ -1,0 +1,9 @@
+torch>=2.2
+transformers>=4.40
+peft>=0.10
+trl>=0.8
+datasets>=2.18
+accelerate>=0.30
+anthropic>=0.39
+numpy>=1.26
+matplotlib>=3.8

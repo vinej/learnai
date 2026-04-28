@@ -1,0 +1,56 @@
+[project]
+name = "module-1-2-tooling"
+version = "0.1.0"
+description = "Tooling examples for the AI Engineering course"
+requires-python = ">=3.11"
+
+# ---------------------------------------------------------------
+# Black: the original opinionated Python formatter
+# Run: black .
+# ---------------------------------------------------------------
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+# ---------------------------------------------------------------
+# Ruff: fast linter + black-compatible formatter
+# Run: ruff check .
+#      ruff check --fix .
+#      ruff format .
+# ---------------------------------------------------------------
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+# A sensible starter rule set. See https://docs.astral.sh/ruff/rules/
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes (unused imports, undefined names)
+    "I",   # isort (import order)
+    "B",   # bugbear (likely-bug patterns)
+    "UP",  # pyupgrade (use modern syntax)
+    "N",   # pep8-naming
+    "SIM", # simplifications
+]
+ignore = [
+    "E501",  # let the formatter handle long lines
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Exercises and demos may use names like `x`, `y`, `n` for clarity.
+"01_messy_code.py" = ["E", "W", "F", "I", "B", "UP", "N", "SIM"]
+"exercises/*.py" = ["N802", "N803", "N806"]
+
+# ---------------------------------------------------------------
+# Mypy: static type checking
+# Run: mypy .
+#      mypy --strict 03_type_hints.py
+# ---------------------------------------------------------------
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+ignore_missing_imports = true   # don't fail on third-party libs without stubs

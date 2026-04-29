@@ -1,5 +1,5 @@
 """
-09 — Two pillars of statistics: LLN and CLT
+10 — Two pillars of statistics: LLN and CLT
 
 LAW OF LARGE NUMBERS (LLN)
     The sample mean of independent draws converges to the true mean
@@ -10,7 +10,7 @@ CENTRAL LIMIT THEOREM (CLT)
     as n grows — *regardless* of the original distribution's shape.
     This is why the bell curve shows up everywhere.
 
-Run: python 09_clt_and_lln.py
+Run: python 10_clt_and_lln.py
 """
 
 from pathlib import Path
@@ -83,7 +83,7 @@ for ax, data, n_size in zip(
 fig.tight_layout()
 out = Path(__file__).parent / "figures"
 out.mkdir(exist_ok=True)
-path = out / "09_clt_lln.png"
+path = out / "10_clt_lln.png"
 fig.savefig(path, dpi=120, bbox_inches="tight")
 plt.close(fig)
 print(f"\nfigure saved to: {path}")

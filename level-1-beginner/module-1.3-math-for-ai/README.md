@@ -31,6 +31,7 @@ Build the math intuition needed to *read* ML papers and tutorials. Not a math de
 3. Implement gradient descent for `f(x) = x² + 3x + 2` and plot the path.
 4. Simulate 10,000 dice rolls and verify the expected mean.
 5. Apply Bayes' rule to a classic medical-test problem.
+6. Apply Bayes' rule to a stock-market signal — and see why most signals carry near-zero information.
 
 ## Resources
 - 3Blue1Brown — Essence of Linear Algebra (YouTube)

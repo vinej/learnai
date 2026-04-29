@@ -14,7 +14,8 @@ python -m venv .venv
 # Windows PowerShell
 .venv\Scripts\Activate.ps1
 # Windows cmd
-.venv\Scripts\activate.bat
+.venv\Scripts\activate.ba
+
 # macOS / Linux
 source .venv/bin/activate
 ```
@@ -44,7 +45,8 @@ python 05_gradients_and_chain_rule.py
 python 06_probability.py
 python 07_statistics.py
 python 08_bayes_rule.py
-python 09_clt_and_lln.py
+python 09_bayes_forecasting.py
+python 10_clt_and_lln.py
 ```
 
 Each script that produces a figure prints the path of the saved PNG. Open it in your editor — VS Code previews PNGs inline.
@@ -57,6 +59,7 @@ python exercises/02_cosine_similarity.py
 python exercises/03_gradient_descent.py
 python exercises/04_dice_rolls.py
 python exercises/05_medical_test_bayes.py
+python exercises/06_bayesian_stock_signal.py   # optional: pip install yfinance for real data
 ```
 
 ## Tips

@@ -10,7 +10,25 @@ that separates {(0,0), (1,1)} from {(0,1), (1,0)}.
 A 2-LAYER MLP — perceptrons stacked, with a non-linear activation between
 layers — can. That's the foundation of every neural net you'll meet.
 
-Run: python 01_perceptron_to_mlp.py
+Run: python 01_perceptron_to_mlp.py 
+
+
+A perceptron is the foundational unit of artificial neural networks, modeled after a biological neuron. It processes inputs to produce a binary output (typically 0 or 1), making it suitable for simple classification tasks.
+
+Key Components:
+Inputs (x): A vector of features or values (e.g., [x₁, x₂, ..., xₙ]).
+Weights (w): A vector of learnable parameters (e.g., [w₁, w₂, ..., wₙ]) that determine the importance of each input. These are adjusted during training to improve predictions.
+Bias (b): A scalar offset that shifts the decision boundary, allowing the model to fit data that doesn't pass through the origin.
+Weighted Sum: The dot product w · x (sum of wᵢ * xᵢ) plus the bias b. This computes a linear combination of inputs.
+Activation Function: A non-linear function applied to the weighted sum to produce the output. For a basic perceptron, it's often a step function (e.g., output = 1 if w · x + b > 0, else 0), which thresholds the result into binary classes.
+How It Works:
+Compute the linear score: z = w · x + b.
+Apply activation: output = activation(z).
+For binary classification, the output indicates the predicted class (e.g., 1 for "yes", 0 for "no").
+Limitations:
+A single perceptron can only learn linearly separable patterns (e.g., AND gate works, but XOR does not).
+It forms the basis for more complex networks like multi-layer perceptrons (MLPs), where multiple perceptrons are stacked with non-linear activations to handle non-linear problems.
+In modern deep learning, perceptrons are generalized into neurons with various activation functions (e.g., sigmoid, ReLU), but the core formula remains similar. Training uses algorithms like gradient descent to update w and b based on prediction errors.
 """
 
 from pathlib import Path
